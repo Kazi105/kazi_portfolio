@@ -1,0 +1,185 @@
+/*-----------FONTS---------*/
+@import url('https://fonts.googleapis.com/css2 family=Poppins:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/*-----------COLOR Variables---------*/
+:root{
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --para: #898989;
+    --light: #f2f2f2;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+/*-----------Basic CSS Start---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+/*    color: #fff;*/
+}
+
+
+/*-----------UTILITIES Start---------*/
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: .8rem 3rem;
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary{
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    transition: all .3s ease;
+    
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+/*-----------UTILITIES End---------*/
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 90%, 0 100%)
+}
+
+.container{
+    max-width: 1152px;
+    margin: auto;
+}
+
+
+/*-----------NAV CSS Start---------*/
+header nav{
+    padding: 1rem 0;
+}
+
+header nav .left .logo{
+    margin-right: 14rem;
+}
+
+header nav .left .logo a h1{
+    font-family: 'Righteous', cursive;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    color: var(--pure);
+}
+
+header nav .left .logo a h1 span{
+    color: var(--primary);
+}
+
+header nav .left .menu a{
+    margin-right: 2rem;
+    transition: all .3s ease;
+    letter-spacing: 1px;
+    font-family: 'Righteous', cursive;
+    color: var(--pure);
+}
+
+header nav .left .menu a:hover{
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    border-radius: 30px;
+}
+/*-----------NAV CSS End---------*/
+
+
+/*-----------HERO CSS Start---------*/
+.hero{
+    margin: 3rem 0;
+}
+
+.hero .left img{
+    border-radius: 10px 10px 0 0; 
+   border: 3px solid var(--primary);
+}
+
+.hero .right h6{
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.hero .right h1{
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+    font-family: 'Righteous', cursive;
+}
+
+.hero .right p{
+    color: var(--pure);
+    margin-bottom: 2.5rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+/*-----------HERO CSS End---------*/
+
+
+
+
+
+
+
+
+
+
